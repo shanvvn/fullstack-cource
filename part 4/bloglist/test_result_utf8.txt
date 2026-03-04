@@ -1,0 +1,12 @@
+﻿
+> bloglist@1.0.0 test
+> cross-env NODE_ENV=test node --test --test-concurrency=1
+
+[dotenv@17.3.1] injecting env (4) from .env -- tip: ΓÜÖ∩╕Å  enable debug logging with { debug: true }
+connecting to mongodb+srv://samirnavas:Samirnavas8355@bandb-cluster.3zkxjhf.mongodb.net/testBlogList?retryWrites=true&w=majority&appName=BandB-Cluster
+error connecting to MongoDB: querySrv ECONNREFUSED _mongodb._tcp.bandb-cluster.3zkxjhf.mongodb.net
+Γû╢ when there is initially some blogs saved
+  Γ£û blogs are returned as json (10050.3477ms)
+  Γ£û all blogs are returned (10013.7469ms)
+  Γ£û the unique identifier property of the blog posts is named id (10010.4885ms)
+Γ£û when there is initially some blogs saved (30077.7723ms)
