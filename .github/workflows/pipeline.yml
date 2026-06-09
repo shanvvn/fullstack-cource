@@ -11,6 +11,9 @@ on:
 jobs:
   simple_deployment_pipeline:
     runs-on: ubuntu-20.04
+    defaults:
+      run:
+        working-directory: './part 11/full-stack-open-pokedex'
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -19,8 +22,6 @@ jobs:
 
       - name: Install dependencies
         run: npm install
-        # Note: If your project is inside a subfolder (e.g. part 11/full-stack-open-pokedex), 
-        # you need to set the working-directory parameter for these run steps.
 
       - name: Check style
         run: npm run eslint || echo "Linting skipped or failed"
